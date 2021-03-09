@@ -1,0 +1,169 @@
+.talents_search {
+  background: #100c32;
+  background-image: url("../images/dist/talents-bg.png");
+}
+
+.talents_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ffffff;
+  margin-top: 56px;
+}
+
+.search_block {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form_search {
+  position: relative;
+  width: 100%;
+  max-width: 384px;
+  margin-right: 16px;
+
+  input {
+    width: 100%;
+    max-width: 384px;
+    height: 48px;
+    outline: none;
+    padding-left: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background: #120e44;
+    border-image-source: linear-gradient(
+      270.57deg,
+      #f2f2f2 -17.75%,
+      #c730ec 16.33%,
+      #71f1fc 66.85%,
+      #1b1464 99.1%
+    );
+    border-width: 2pt;
+    border-image-slice: 1;
+    color: #ffffff;
+  }
+
+  input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #8f9bb3;
+  }
+
+  .serch_btn {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 45px;
+    height: 43px;
+    border: none;
+    outline: none;
+  }
+
+  .serch_btn img {
+    margin-top: 5px;
+  }
+}
+
+.clear_btn {
+  width: 72px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #222b45;
+  border: none;
+  outline: none;
+}
+
+//TABS
+
+
+.tabs2 {
+  display: flex;
+}
+
+.tabs2 li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.tabs2 li a {
+  display: block;
+  position: relative;
+  top: 4px;
+  padding: 10px 25px;
+  border-radius: 2px 2px 0 0;
+  background: white;
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+
+.tabs2 li.active a,
+.tabs2 li a:hover {
+  opacity: 1;
+  top: 0;
+}
+
+.tabs-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  
+}
+
+.tabs-panel2 {
+  display: none;
+}
+
+.tabs-panel2.active {
+  display: block;
+}
+
+.tabs-panel2 p + div {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .tabs2 {
+    flex-direction: column;
+  }
+
+  .tabs2 li {
+    width: 100%;
+  }
+
+  .tabs2 li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .tabs2 li a {
+    border-radius: 0;
+    opacity: 1;
+    top: 0;
+  }
+
+  .tabs2 li.active a::before {
+    content: "•";
+    padding-right: 5px;
+  }
+
+  .tabs-content {
+    border-radius: 0;
+  }
+}
+

@@ -1,0 +1,190 @@
+.charts_block_title{
+    margin-bottom: 55px;
+}
+
+.charts_block_title h3{
+    position: relative;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: #fff;
+}
+
+.charts_block_title h3::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    height: 1px;
+    background: linear-gradient(90deg, #FF014D 45.24%, rgba(255, 1, 77, 0) 98.68%);
+    
+    
+}
+
+.chart_container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.charts_content_chart img{
+    width: 100%;
+    height: auto;
+}
+
+.chart_text{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+color: #E4E9F2;
+max-width: 485px;
+}
+
+.charts_content{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  
+  .charts_content_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    width: 100%;
+    max-width: 486px;
+    margin-top: 40px;
+  }
+  
+  .charts_content_text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #E4E9F2;
+  }
+  
+  .charts_content_text .chart_data{
+    margin-top: 47px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  
+  .chart_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 40px;
+    // margin-bottom: 40px;
+  }
+  
+  .chart_item_top{
+    font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  }
+  
+  p.chart_item_number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #08F5FF;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    margin-bottom: 0px;
+  }
+  
+  .chart_item_social{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+
+  @media (max-width: 992px){
+    .tab_content_chart img{
+      width: 100%;
+      height: auto;
+    }
+  
+    .tab_content_text p:first-child{
+      font-size: 14px;
+    }
+  
+    .chart_item{
+      margin-right: 0px;
+    }
+    .tab_slider_img{
+      left:4%;
+    }
+  }
+  
+  @media (max-width: 575.98px){
+    .philosophie{
+      margin-top: 96px;
+      margin-bottom: 82px;
+    }
+  
+    .tab_head{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .charts_content{
+      grid-template-rows: 2fr;
+      grid-template-columns: 1fr;
+    }
+    .charts_content_chart{
+      order:1;
+    }
+  
+    .charts_content_text{
+      order: 2;
+    }
+    .charts_content_text p:first-child {
+      font-size: 16px;
+  }
+  
+  .tabs li a{
+    margin-bottom: -17px;
+    height: 63px;
+    width: 114px;
+    font-size: 18px;
+  }
+  
+  .tabs1 li a{
+    margin-bottom: -17px;
+    height: 63px;
+    width: 114px;
+    font-size: 18px;
+  }
+  .tab_title{
+    margin-bottom: 14px;
+  }
+  
+  .tab_slider{
+    margin-bottom: 150px;
+  }
+  
+  .tab_slider_img{
+    // width: 100%;
+    height: auto;
+    left:-28%;
+    top:-78%;
+  }
+  }
+  

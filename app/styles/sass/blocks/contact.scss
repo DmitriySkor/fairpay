@@ -1,0 +1,164 @@
+.contacts_list{
+    margin-top: 80px;
+    margin-bottom: 65px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5vw;
+}
+
+.contacts_item{
+    margin-top: 80px;
+    margin-bottom: 65px;
+    width: 100%;
+    max-width: 720px;
+}
+
+.contacts_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 465px;
+    height: 140px;
+    position: relative;
+    background-image: url('../images/dist/contact-bg.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    h3{
+        font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+color: #F2F2F2;
+text-transform: uppercase;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: #F2F2F2;
+        margin-top: 16px;
+    }
+}
+
+.contact_social{
+    margin-top: 79px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: #F2F2F2;
+    }
+}
+
+.contact_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    p{
+        font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+color: #F2F2F2;
+text-transform: uppercase;
+
+    }
+}
+
+.contact_addr{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #8F9BB3;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.contact_touch{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    a{
+        font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #8F9BB3;
+    }
+}
+
+.name_boss{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #8F9BB3;
+}
+
+
+@media (max-width: 768px) {
+    .contacts_title h3{
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .contacts_block .contacts_list{
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+
+    .contacts_item{
+        margin-bottom: 0px;
+    }
+
+    .contacts_title{
+        height: 80px;
+        background: transparent;    
+    }
+
+    .contacts_item{
+        max-width: 100%;
+        margin-top: 60px;
+    }
+
+    .contact_details{
+        margin-top: 0px;
+    margin-left: 0px;
+    }
+
+    .contact_social{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 24px;
+    }
+
+    .contact_social a{
+        margin-bottom: 32px;
+    }
+ }
+

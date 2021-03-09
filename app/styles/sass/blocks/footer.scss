@@ -1,0 +1,125 @@
+.footer_content{
+    padding-top: 72px;
+    padding-bottom: 72px;
+    // display: grid;
+    // grid-template-rows: 1fr;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer_item_logo{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #08F5FF;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.company_menu li{
+    margin-bottom: 14px;
+}
+
+.company_menu li a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.medias_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.medias_menu li{
+    margin-bottom: 14px;
+    margin-right: 4px;
+}
+
+.medias_menu li a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.contacts_menu li{
+    margin-bottom: 14px;
+}
+
+.contacts_menu li a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.contacts_menu li a.contact_menu_mail{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #8F9BB3;
+}
+
+.contacts_menu li a.contact_menu_tel{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #8F9BB3;
+}
+
+.bottom_line{
+    border-top: 1px solid #D914F4;
+    width: 100%;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 65px;
+    font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+color: #8F9BB3;
+}
+
+@media (max-width: 767.98px) {
+    .footer_item_first{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 52px;
+    }
+    .footer_content{
+        padding-top: 24px;  
+        padding-left: 45px;
+        padding-right: 45px; 
+    }
+
+    .footer_item_last{
+        width: 100%;
+        margin-top: 48px;
+    }
+}

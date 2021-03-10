@@ -1,0 +1,220 @@
+.project_page_wrap .projects_title::after{
+    background: none;
+}
+
+.project_page_wrap .projects_slider{
+    margin-top: 105px;
+}
+
+.project_unit{
+    background: #1B1464;
+    width: 100%;
+    max-width: 996px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.project_unit_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #F2F2F2;
+    margin-bottom: 16px;
+}
+
+.project_unit_description{
+    width: 100%;
+    max-width: 810px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.project_unit_description::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 23px;
+    height: 1px;
+    background: linear-gradient(180deg, #1B1464 6.64%, #6BCCE1 52.73%, #1B1464 77.28%);
+}
+
+.project_unit_description p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #C5CEE0;
+    margin-bottom: 10px;
+}
+
+.unit_talent_img{
+    position: relative;
+    margin-right: 16px;
+}
+
+.unit_img_wrap{
+    position: absolute;
+    top:0;
+    width: 72px;
+    height: 74px;
+    background: linear-gradient(131.24deg, rgba(143, 233, 244, 0.6) 0%, rgba(217, 20, 244, 0.6) 100.18%);
+background-blend-mode: hard-light;
+}
+
+.unit_talent_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.unit_talent_item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.unit_talent_item:last-child{
+    margin-right: 0px;
+}
+
+
+
+.unit_talent_item_text{
+    display: flex;
+    flex-direction: row;
+}
+
+.unit_talent_title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    margin-bottom: 8px;
+}
+
+.unit_talent_clan{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #08F5FF;
+    text-shadow: 0px 0px 19.2827px rgba(10, 243, 255, 0.8);
+}
+
+.unit_talent_clan span{
+    margin-left: 8px;    
+}
+
+.unit_item_video {
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    max-width: 384px;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 55px;
+    border: 5px solid;
+    border-image-source: linear-gradient(90.07deg, #F2F2F2 0.06%, #C730EC 28.71%, #71F1FC 71.16%, #E2E1E3 98.27%);;
+    border-width: 4pt;
+    border-image-slice: 1;
+
+    a{
+        width: 100%;
+    max-width: 384px;
+    height: 215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+        background-blend-mode: hard-light;
+        transition: .5s ease-in-out;
+
+        img{
+            margin-bottom: 10%;
+        }
+
+    }
+
+    a:hover{
+        background:transparent;
+        transition: .5s ease-in-out;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-bottom: 8px;
+        margin-left: 16px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+}
+
+.project_conversation{
+    background: #1B1464;
+    width: 100%;
+    max-width: 996px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 100px;
+    padding-top: 39px;
+    padding-left: 32px;
+    padding-right: 32px; 
+}
+
+.project_conversation_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #F2F2F2;
+}
+
+.conversation_list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.conversation_list li{
+    margin-right: 48px;
+    margin-bottom: 62px;
+}
+
+.conversation_list li:last-child{
+    margin-right: 0px;
+}
+
+.conversation_number{
+    font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 56px;
+color: #08F5FF;
+}
+
+.conversation_social{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #F2F2F2;
+text-transform: uppercase;
+}
+

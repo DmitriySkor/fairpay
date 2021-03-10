@@ -30,6 +30,7 @@
 
 .team_face{
     margin-top: 32px;
+    margin-bottom: 49px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -97,7 +98,7 @@ color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     margin-bottom: 9px;
 }
 
@@ -105,7 +106,7 @@ color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     margin-bottom: 9px;
 }
 
@@ -115,6 +116,7 @@ color: #FFFFFF;
 }
 
 .small_faces{
+    max-width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,4 +161,59 @@ a.face_wrap_small:hover{
 
 .small_face:last-child{
     margin-bottom: 0px;
+}
+
+.face_line_repeat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.face_line_repeat > .small_face{
+    margin-right: 9px;
+}
+
+.face_line_repeat > .small_face:last-child{
+    margin-right: 0px;
+}
+
+@media (max-width: 767.98px) {
+    .face_line_one, .face_line_two{
+        flex-direction: column;
+    }
+
+    .big_face{
+        margin-right: 0px;
+        margin-bottom: 9px;
+    }
+
+    .face_line_two .big_face{
+        margin-left: 0px;
+        margin-top: 9px;
+        margin-bottom: 0px;
+    }
+
+    .small_faces{
+        max-width: 100%;    
+    }
+
+    .small_face{
+        overflow: hidden;    
+    }
+
+    .face_wrap_small{
+        height: 100%;
+    }
+
+    .face_line_repeat{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .team_subtitle{
+        font-size: 23px;
+    }
 }

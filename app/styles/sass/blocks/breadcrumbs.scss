@@ -1,0 +1,32 @@
+.breadcrumbs {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #C5CEE0;
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #C5CEE0;
+    transition: .3s ease-in-out;
+    &:hover{
+      color: #08f5ff;
+      transition: .3s ease-in-out;
+    }
+  }
+}

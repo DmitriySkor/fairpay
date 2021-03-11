@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Custom JS
 
-
-	const tabLinks = document.querySelectorAll(".tabs a");
-const tabPanels = document.querySelectorAll(".tabs-panel");
+  const tabLinks = document.querySelectorAll(".tabs a");
+  const tabPanels = document.querySelectorAll(".tabs-panel");
 
 for (let el of tabLinks) {
   el.addEventListener("click", e => {
@@ -34,18 +33,18 @@ for (let el of tabLinks) {
 
   const tabLinks1 = document.querySelectorAll(".tabs1 a");
   const tabPanels1 = document.querySelectorAll(".tabs-panel1");
-  
+
   for (let el of tabLinks1) {
     el.addEventListener("click", e => {
       e.preventDefault();
-  
+
       document.querySelector(".tabs1 li.active").classList.remove("active");
       document.querySelector(".tabs-panel1.active").classList.remove("active");
-  
+
       const parentListItem1 = el.parentElement;
       parentListItem1.classList.add("active");
       const index = [...parentListItem1.parentElement.children].indexOf(parentListItem1);
-  
+
       const panel = [...tabPanels1].filter(el => el.getAttribute("data-index") == index);
       panel[0].classList.add("active");
       });
@@ -53,18 +52,18 @@ for (let el of tabLinks) {
 
     const tabLinks2 = document.querySelectorAll(".tabs2 a");
   const tabPanels2 = document.querySelectorAll(".tabs-panel2");
-  
+
   for (let el of tabLinks2) {
     el.addEventListener("click", e => {
       e.preventDefault();
-  
+
       document.querySelector(".tabs2 li.active").classList.remove("active");
       document.querySelector(".tabs-panel2.active").classList.remove("active");
-  
+
       const parentListItem2 = el.parentElement;
       parentListItem2.classList.add("active");
       const index = [...parentListItem2.parentElement.children].indexOf(parentListItem2);
-  
+
       const panel = [...tabPanels2].filter(el => el.getAttribute("data-index") == index);
       panel[0].classList.add("active");
       });

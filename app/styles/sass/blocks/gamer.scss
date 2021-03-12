@@ -11,7 +11,7 @@
     width: 100%;
     // max-width: 360px;
     height: 338px;
-    transition: transform .5s ease-in-out;
+    transition: transform .3s ease-in-out;
     
 }
 
@@ -26,12 +26,12 @@
         height: 100%;
         background: linear-gradient(131.24deg, rgba(143, 233, 244, 0.6) 0%, rgba(217, 20, 244, 0.6) 100.18%);
         background-blend-mode: hard-light;
-        transition: .5s ease-in-out;
+        transition: .3s ease-in-out;
     }
 
     a:hover{
         background:transparent;
-        transition: .5s ease-in-out;
+        // transition: .5s ease-in-out;
     }
 
     p{
@@ -61,7 +61,7 @@
 
 .gamer_item:hover{
     transform: scale(1.05);
-    transition: transform .2s ease-in;
+    // transition: transform .2s ease-in;
 }
 
 .social_bar{
@@ -86,7 +86,11 @@ ul{
 }
 
 li{
-    width: 33.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 62px;
 }
 
@@ -95,8 +99,8 @@ li{
 .social_bar ul li a{
     font-style: normal;
 font-weight: normal;
-font-size: 19.3268px;
-line-height: 33px;
+font-size: 16px;
+line-height: 27px;
 color: #ffffff;
 display: flex;
 flex-direction: row;

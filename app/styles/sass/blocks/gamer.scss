@@ -133,6 +133,20 @@ align-items: center;
     background: #41A0FC;
 }
 
+.social_bar_tiktok a{
+    background: #040000;
+}
+.social_bar_tiktok a:hover{
+    background: #040000;
+}
+
+.social_bar_twitch a{
+    background: #6441A5;
+}
+.social_bar_twitch a:hover{
+    background: #6441A5;
+}
+
 .gamer_list_two{
     display: grid;
     grid-template-rows: 1fr;

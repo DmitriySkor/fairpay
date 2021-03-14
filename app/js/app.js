@@ -50,14 +50,14 @@ for (let el of tabLinks) {
       });
     };
 
-    const tabLinks2 = document.querySelectorAll(".tabs2 a");
+    const tabLinks2 = document.querySelectorAll(".city_tabs a");
   const tabPanels2 = document.querySelectorAll(".tabs-panel2");
 
   for (let el of tabLinks2) {
     el.addEventListener("click", e => {
       e.preventDefault();
 
-      document.querySelector(".tabs2 li.active").classList.remove("active");
+      document.querySelector(".city_tabs li.active").classList.remove("active");
       document.querySelector(".tabs-panel2.active").classList.remove("active");
 
       const parentListItem2 = el.parentElement;

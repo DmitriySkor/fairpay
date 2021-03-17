@@ -4,6 +4,9 @@
  window.$ = $
 
 
+ import ApexCharts from 'apexcharts'
+
+
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
@@ -175,6 +178,54 @@ $(".projects_slider").slick({
   ]
 });
 
-})
+});
+
+// Charts
+var options = {
+  series: [{
+  name: 'YOUTUBE',
+  data: [1, 2, 4, 6, 5, 3, 8, 9]
+}, {
+  name: 'INSTAGRAM',
+  data: [1, 3, 5, 4, 6, 8, 7, 8]
+}, {
+  name: 'TWICH',
+  data: [1, 2, 5, 4, 6, 5, 6, 8]
+}],
+  chart: {
+  type: 'bar',
+  height: 350,
+  stacked: true,
+  stackType: '1000000'
+},
+responsive: [{
+  breakpoint: 480,
+  options: {
+    legend: {
+      position: 'bottom',
+      offsetX: -10,
+      offsetY: 0
+    }
+  }
+}],
+xaxis: {
+  categories: ['2011', '2012', '2013', '2014', '2015', '2016',
+    '2017', '2018'
+  ],
+},
+fill: {
+  opacity: 1
+},
+legend: {
+  // position: 'right',
+  // offsetX: 0,
+  // offsetY: 50
+},
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+
+
 
 

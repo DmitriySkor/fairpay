@@ -94,6 +94,9 @@
 /* tabsmenu talents */
   
 .tab_head{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   min-height: 89px;
   display:flex;
@@ -155,11 +158,13 @@
   color: #08F5FF;
 }
 
-.tabs-content {
+.tabs-content-talants {
   position: relative;
   z-index: 2;
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 25px;
-  border-radius: 0 4px 4px 4px;
+  // border-radius: 0 4px 4px 4px;
   // background: white;
 }
 
@@ -177,16 +182,37 @@
 
 
 
+
 .gamer_slide{
     width: 100%;
     // min-width: 316px;
     height: 317px;
-    position: relative;
+    // position: relative;
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+
+.slider_talant .slick-center .slide_item{
+  transform: scale(1.03);
+  transition: transform .2s ease-in-out;
+  z-index: 55;
+
+  .gamer_slide a{
+      background:transparent;
+      transition: .5s ease-in-out;
+  } 
+
+  .gamer_slide a .gamer_social_bar{
+      opacity: 1;    
+  }
+
+  .slide_gamer_name{
+      opacity: 1;    
+  }
+} 
 
 .gamer_slide{
   
@@ -208,7 +234,12 @@ a{
 }
 
 .gamer_social_bar{
-  display: none;
+  // display: none;
+  opacity: 0;
+}
+
+ .gamer_slide:hover .gamer_social_bar{
+  opacity: 1;
 }
 
 .gamer_social_bar{
@@ -228,7 +259,7 @@ a{
 }
 
 li{
-  width: 33.3%;
+  width: 100%;
   height: 35px;
   display: flex;
   flex-direction: row;

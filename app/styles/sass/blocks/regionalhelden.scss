@@ -1,4 +1,4 @@
-.city_tabs {
+ul.city_tabs {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -6,6 +6,7 @@
     height: 45px;
     background:#1B1464;
     position: relative;
+    list-style: none;
   }
   
   .city_tabs li:not(:last-child) {
@@ -61,17 +62,17 @@
   }
   
   @media screen and (max-width: 600px) {
-    .city_tabs {
-      flex-direction: column;
-    }
+    // .city_tabs {
+    //   flex-direction: column;
+    // }
   
-    .city_tabs li {
-      width: 100%;
-    }
+    // .city_tabs li {
+    //   width: 100%;
+    // }
   
-    .city_tabs li:not(:last-child) {
-      margin-right: 0;
-    }
+    // .city_tabs li:not(:last-child) {
+    //   margin-right: 0;
+    // }
   
     .city_tabs li a {
       border-radius: 0;
@@ -79,12 +80,37 @@
       top: 0;
     }
   
-    .city_tabs li.active a::before {
-      content: "•";
-      padding-right: 5px;
-    }
+    // .city_tabs li.active a::before {
+    //   content: "•";
+    //   padding-right: 5px;
+    // }
   
     .tabs-content {
       border-radius: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    ul.city_tabs{
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+      list-style: none;
+    }
+
+    .city_tabs li:not(:last-child) {
+      margin-right: 0;
+    }
+
+    .city_tabs li a{
+      height: 52px;
+    }
+
+    .city_tabs li a:hover, .city_tabs li.active a{
+      background: transparent;
+    }
+
+    .top_title h1{
+      font-size: 35px;
     }
   }

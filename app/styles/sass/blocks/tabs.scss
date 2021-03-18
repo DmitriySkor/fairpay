@@ -410,3 +410,9 @@ color: #ffffff;
 }
 }
 
+
+.slick-slide.slick-current.slick-active.slick-center {
+  position: relative;
+  z-index: 10;
+}
+

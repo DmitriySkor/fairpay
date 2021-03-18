@@ -181,50 +181,103 @@ $(".projects_slider").slick({
 });
 
 // Charts
-var options = {
-  series: [{
-  name: 'YOUTUBE',
-  data: [1, 2, 4, 6, 5, 3, 8, 9]
-}, {
-  name: 'INSTAGRAM',
-  data: [1, 3, 5, 4, 6, 8, 7, 8]
-}, {
-  name: 'TWICH',
-  data: [1, 2, 5, 4, 6, 5, 6, 8]
-}],
-  chart: {
-  type: 'bar',
-  height: 350,
-  stacked: true,
-  stackType: '1000000'
-},
-responsive: [{
-  breakpoint: 480,
-  options: {
-    legend: {
-      position: 'bottom',
-      offsetX: -10,
-      offsetY: 0
-    }
-  }
-}],
-xaxis: {
-  categories: ['2011', '2012', '2013', '2014', '2015', '2016',
-    '2017', '2018'
-  ],
-},
-fill: {
-  opacity: 1
-},
-legend: {
-  // position: 'right',
-  // offsetX: 0,
-  // offsetY: 50
-},
-};
+$(document).ready(function () {
+  const options = {
+      series: [{
+          name: 'Twitch',
+          data: [100, 130, 150, 160, 180, 200, 220, 240, 250, 280, 310, 350, 370, 220, 240, 250, 280, 310, 350, 370]
+      }, {
+          name: 'Instagram',
+          data: [100, 100, 100, 110, 130, 150, 150, 160, 180, 190, 200, 210, 230, 150, 160, 180, 190, 200, 210, 230]
+      }, {
+          name: 'Youtube',
+          data: [100, 100, 100, 120, 140, 160, 170, 180, 190, 200, 220, 240, 260, 170, 180, 190, 200, 220, 240, 260]
+      }],
+      chart: {
+          type: 'bar',
+          height: 350,
+          stacked: true,
+          toolbar: {
+              show: false
+          },
+          zoom: {
+              enabled: false
+          }
+      },
+      grid: {
+          show: false,
+      },
+      dataLabels: {
+          enabled: false
+      },
+      colors: ['#8330EC', '#FF0099', '#FF003D'],
+      responsive: [{
+          breakpoint: 480,
+          options: {
+              legend: {
+                  position: 'bottom',
+                  offsetX: -10,
+                  offsetY: 0
+              }
+          }
+      }],
+      plotOptions: {
+          bar: {
+              borderRadius: 10,
+              horizontal: false,
+              columnWidth: '50%',
+              dataLabels: {
+                  position: false,
+                  maxItems: false,
+                  hideOverflowingLabels: false,
+              }
+          },
+      },
+      xaxis: {
+          type: 'datetime',
+          categories: [
+              '01/01/2017 GMT', '04/01/2017 GMT', '07/01/2017 GMT', '10/01/2017 GMT',
+              '01/01/2018 GMT', '04/01/2018 GMT', '07/01/2018 GMT', '10/01/2018 GMT',
+              '01/01/2019 GMT', '04/01/2019 GMT', '07/01/2019 GMT', '10/01/2019 GMT',
+              '01/01/2020 GMT', '04/01/2020 GMT', '07/01/2020 GMT', '10/01/2020 GMT',
+          ],
+          labels: {
+              style: {
+                  fontSize: '14px',
+                  colors: '#FFFFFF'
+              }
+          },
+          axisBorder: {
+              color: 'rgba(255, 255, 255, 0.2)'
+          },
+          axisTicks: {
+              show: false,
+          },
+      },
+      yaxis: {
+          axisBorder: {
+              show: true,
+              color: 'rgba(255, 255, 255, 0.2)'
+          },
+          labels: {
+              style: {
+                  fontSize: '14px',
+                  colors: '#FFFFFF'
+              }
+          }
+      },
+      legend: {
+          position: 'bottom',
+          offsetY: 40
+      },
+      fill: {
+          opacity: 1
+      }
+  };
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
+})
 
 
 
